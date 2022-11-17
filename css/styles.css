@@ -6,6 +6,9 @@ header nav {
 .contact:hover {
     color: yellow;
 }
+.active {
+    cursor: pointer;
+}
 .active:active {
     color: magenta;
 }
