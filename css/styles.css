@@ -1,23 +1,11 @@
+:root {
+    --light-blue: #2196f3;
+}
 .header-navigation {
     width: 1600px;
     height: 80px;
-    display: inline-block;
 }
-.active-button {
-    color: white;
-    font-size: 16px;
-    line-height: 1.88;
-    font-weight: 700;
-    cursor: pointer;
-    display: inline-block;
-    width: 200px;
-    height: 50px;
-    background-color: #2196f3;
-    border: none;
-}
-.active-button:active {
-    color: magenta;
-}
+
 .header-studio {
     color: black;
     text-decoration: none;
@@ -26,7 +14,7 @@
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
 }
-.header-web {
+.logo {
     color: #2196f3;
     line-height: 1.19;
     text-decoration: none;
@@ -39,36 +27,23 @@ body {
     font-family: 'Roboto', 'Raleway', sans-serif;
     color: #111;
 }
-.agency {
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list a {
     font-size: 14px;
     color: #111;
     line-height: 1.14;
     font-weight: 500;
     text-decoration: none;
 }
-.agency:hover {
-    color: #2196f3;
+
+.nav-list a:hover {
+    color: var(--light-blue);
 }
-.portfolio {
-    font-size: 14px;
-    color: #111;
-    line-height: 1.14;
-    font-weight: 500;
-    text-decoration: none;
-}
-.portfolio:hover {
-    color: #2196f3;
-}
-.contact {
-    font-size: 14px;
-    color: #111;
-    line-height: 1.14;
-    font-weight: 500;
-    text-decoration: none;
-}
-.contact:hover {
-    color: #2196f3;
-}
+
 .nav-mail {
     font-size: 14px;
     color: #757575;
@@ -77,7 +52,7 @@ body {
     text-decoration: none;
 }
 .nav-mail:hover {
-    color: #2196f3;
+    color: var(--light-blue);
 }
 .nav-tel {
     font-size: 14px;
@@ -87,9 +62,13 @@ body {
     text-decoration: none;
 }
 .nav-tel:hover {
-    color: #2196f3;
+    color: var(--light-blue);
 }
-
+.service {
+    height: 600px;
+    width: 1600px;
+    background-color: #2f303a;
+}
 .button-title {
     color: white;
     font-size: 44px;
@@ -98,18 +77,29 @@ body {
     width: 696px;
     height: 120px;
 }
-.service {
-    height: 600px;
-    width: 1600px;
-    background-color: #2f303a;
+.active-button {
+    color: white;
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 700;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 4px;
 }
-.paragraph {
+.active-button:active {
+    color: magenta;
+}
+.primary-list p {
     font-size: 14px;
     font-weight: 400;
     color: #757575;
     line-height: 1.71;
 }
-.paragraph-title {
+
+.primary-list h3 {
     color: #212121;
     text-transform: uppercase;
 }
@@ -136,7 +126,7 @@ body {
     line-height: 1.19;
 }
 .footer-mail:hover {
-    color: #2196f3;
+    color: var(--light-blue);
 }
 .footer-tel {
     text-decoration: none;
@@ -144,15 +134,7 @@ body {
     line-height: 1.19;
 }
 .footer-tel:hover {
-    color: #2196f3;
-}
-.footer-web {
-    color: #2196f3;
-    line-height: 1.17;
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+    color: var(--light-blue);
 }
 .footer-studio {
     color: white;
@@ -162,14 +144,14 @@ body {
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
 }
-.image-background {
+.secondary-list figure {
     background-color: white;
     width: 270px;
     height: 368px;
     border-radius: 2px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.team-names {
+.secondary-list figcaption {
     font-size: 16px;
     line-height: 1.19;
     color: #212121;
@@ -181,14 +163,12 @@ body {
 }
 .secondary-list {
     list-style-type: none;
-    display: inline-block;
 }
 .primary-list {
     list-style-type: none;
-    display: inline-block;
 }
 
-.project-names {
+.portfolio-list figcaption {
     color: #212121;
     font-size: 18px;
     line-height: 2;
@@ -200,15 +180,16 @@ body {
     line-height: 1.88;
     font-weight: 400;
 }
-.buttons-portfolio {
+.portfolio-nav-buttons a {
     color: #212121;
     font-size: 16px;
     line-height: 1.63;
     cursor: pointer;
     text-decoration: none;
-    display: inline-block;
+    background-color: #f5f4fa;
+    border-radius: 4px;
 }
-.buttons-portfolio:hover {
+.portfolio-nav-buttons a:hover {
     background-color: #2196f3;
     color: white;
 }
