@@ -30,6 +30,7 @@ body {
 
 .nav-list {
     list-style: none;
+    list-style-type: none;
 }
 
 .nav-list a {
@@ -42,6 +43,10 @@ body {
 
 .nav-list a:hover {
     color: var(--light-blue);
+}
+.contact-list {
+    list-style: none;
+    list-style-type: none;
 }
 
 .nav-mail {
@@ -112,6 +117,12 @@ body {
 .team-title {
     line-height: 1.17;
 }
+.team-names {
+    color: #212121;
+    font-size: 16px;
+    line-height: 1.17;
+    font-weight: 500;
+}
 .footer-section {
     background-color: #2f303a;
 }
@@ -119,19 +130,30 @@ body {
     text-decoration: none;
     color: white;
     line-height: 1.19;
+    font-style: normal;
 }
 .footer-mail {
     text-decoration: none;
     color: rgb(255, 255, 255, 0.6);
     line-height: 1.19;
+    font-style: normal;
 }
 .footer-mail:hover {
+    color: var(--light-blue);
+}
+.footer-mail-portfolio {
+    color: rgb(255, 255, 255, 0.6);
+    line-height: 1.19;
+    font-style: normal;
+}
+.footer-mail-portfolio:hover {
     color: var(--light-blue);
 }
 .footer-tel {
     text-decoration: none;
     color: rgb(255, 255, 255, 0.6);
     line-height: 1.19;
+    font-style: normal;
 }
 .footer-tel:hover {
     color: var(--light-blue);
@@ -167,8 +189,16 @@ body {
 .primary-list {
     list-style-type: none;
 }
-
+.portfolio-list {
+    list-style-type: none;
+}
 .portfolio-list figcaption {
+    color: #212121;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 700;
+}
+.project-names {
     color: #212121;
     font-size: 18px;
     line-height: 2;
@@ -180,7 +210,10 @@ body {
     line-height: 1.88;
     font-weight: 400;
 }
-.portfolio-nav-buttons a {
+.portfolio-nav-buttons {
+    list-style-type: none;
+}
+.portfolio-nav-buttons button {
     color: #212121;
     font-size: 16px;
     line-height: 1.63;
@@ -188,8 +221,9 @@ body {
     text-decoration: none;
     background-color: #f5f4fa;
     border-radius: 4px;
+    border-style: none;
 }
-.portfolio-nav-buttons a:hover {
+.portfolio-nav-buttons button:hover {
     background-color: #2196f3;
     color: white;
 }
